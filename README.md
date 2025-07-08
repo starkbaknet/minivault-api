@@ -84,7 +84,7 @@ uvicorn app:app --reload
 
 ```json
 {
-  "prompt": "Tell me a joke."
+  "prompt": "What is FastAPI?."
 }
 ```
 
@@ -92,7 +92,7 @@ uvicorn app:app --reload
 
 ```json
 {
-  "response": "Sure! Why don't scientists trust atoms? Because they make up everything!"
+  "response": "FastAPI is a modern, fast (high-performance) web framework for building APIs with Python 3.7+ based on standard Python type hints."
 }
 ```
 
@@ -112,9 +112,9 @@ The structure looks like:
 {
   "logs": [
     {
-      "timestamp": "2025-07-08T18:23:45.123Z",
-      "prompt": "Hello",
-      "response": "Hi there!"
+      "timestamp": "2025-07-08T18:48:13.793841",
+      "prompt": "What is FastAPI?",
+      "response": "FastAPI is a modern, fast (high-performance) web framework for building APIs with Python 3.7+ based on standard Python type hints."
     }
   ]
 }
