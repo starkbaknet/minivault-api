@@ -14,6 +14,12 @@ A lightweight, fully local REST API for interacting with a small language model 
 
 ---
 
+## 🧠 Design Choices & Future Improvements
+
+This project prioritizes simplicity, speed, and local-first design using FastAPI and Ollama. It avoids cloud dependencies and external storage. In the future, support for streaming responses, multi-model selection, and a `/logs` retrieval endpoint could enhance usability and flexibility.
+
+---
+
 ## Project Structure
 
 ```
