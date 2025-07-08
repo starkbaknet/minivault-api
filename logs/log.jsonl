@@ -1,0 +1,9 @@
+{
+  "logs": [
+    {
+      "timestamp": "2025-07-08T18:48:13.793841",
+      "prompt": "What is FastAPI?",
+      "response": "FastAPI is a modern, fast (high-performance) web framework for building APIs with Python 3.7+ based on standard Python type hints."
+    }
+  ]
+}
