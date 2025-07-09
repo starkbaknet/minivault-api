@@ -42,14 +42,16 @@ def log_interaction(prompt: str, response: str):
         json.dump(data, f, indent=2)
 
 
-async def query_ollama(prompt: str, model: str = "gemma") -> str:
+async def query_ollama(prompt: str, model: str = "gemma:2b") -> str:
     url = MODEL_URL
     payload = {
         "model": model,
         "prompt": prompt,
         "stream": False
     }
-    async with httpx.AsyncClient() as client:
+    # Set a longer timeout for Ollama requests (30 seconds)
+    timeout = httpx.Timeout(30.0)
+    async with httpx.AsyncClient(timeout=timeout) as client:
         res = await client.post(url, json=payload)
         res.raise_for_status()
         return res.json()["response"]
